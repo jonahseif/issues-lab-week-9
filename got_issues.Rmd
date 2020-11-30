@@ -27,7 +27,7 @@ names(storms)
 
 ```{r}
 ggplot(data = storms, aes(x = category, y = pressure)) +
-  geom_jitter(width = 0.1, 
+  geom_point(width = 0.1, 
               alpha = 0.5,
               aes(color = category),
               show.legend = FALSE) +
